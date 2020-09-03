@@ -1,0 +1,519 @@
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (3.8ms)[0m  [1m[34mSELECT GET_LOCK('5298940562774962950', 0)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (5.5ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('5298940562774962950')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/" for ::1 at 2020-08-28 22:59:47 +0800
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/rashidfirhat98/.rvm/gems/ruby-2.7.1/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/rashidfirhat98/.rvm/gems/ruby-2.7.1/gems/railties-6.0.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 56.0ms | Allocations: 299)
+Completed 200 OK in 131ms (Views: 97.3ms | ActiveRecord: 0.0ms | Allocations: 1644)
+
+
+  [1m[35m (18.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE DATABASE `sample_app_development` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE DATABASE `sample_app_test` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (39.4ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  [1m[35m (36.1ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT GET_LOCK('661840412039056215', 0)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (3.6ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2020-08-31 07:01:51.160546', '2020-08-31 07:01:51.160546')[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('661840412039056215')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/" for 127.0.0.1 at 2020-08-31 15:08:56 +0800
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 27.3ms | Allocations: 188)
+[Webpacker] Compiling...
+Started GET "/" for 127.0.0.1 at 2020-08-31 15:09:01 +0800
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 5)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/sample_app/public/packs
+[Webpacker] Hash: 15d1bb7b54cf6326b9ba
+Version: webpack 4.44.1
+Time: 8286ms
+Built at: 08/31/2020 3:09:11 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-9afcbb5693aa87623e69.js    124 KiB  application  [emitted] [immutable]  application
+js/application-9afcbb5693aa87623e69.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-9afcbb5693aa87623e69.js js/application-9afcbb5693aa87623e69.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 749 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+[Webpacker] Compiled all packs in /home/sample_app/public/packs
+[Webpacker] Hash: 15d1bb7b54cf6326b9ba
+Version: webpack 4.44.1
+Time: 7356ms
+Built at: 08/31/2020 3:09:11 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-9afcbb5693aa87623e69.js    124 KiB  application  [emitted] [immutable]  application
+js/application-9afcbb5693aa87623e69.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-9afcbb5693aa87623e69.js js/application-9afcbb5693aa87623e69.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 749 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 15850ms (Views: 15796.9ms | ActiveRecord: 0.0ms | Allocations: 23718)
+
+
+Completed 200 OK in 10303ms (Views: 10301.6ms | ActiveRecord: 0.0ms | Allocations: 6007)
+
+
+Started GET "/static_pages/help" for ::1 at 2020-08-31 15:09:30 +0800
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 8.7ms | Allocations: 79)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 38ms (Views: 36.5ms | ActiveRecord: 0.0ms | Allocations: 3489)
+
+
+Started GET "/static_pages/help" for ::1 at 2020-08-31 15:22:42 +0800
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 2.0ms | Allocations: 81)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 29ms (Views: 25.5ms | ActiveRecord: 0.0ms | Allocations: 4282)
+
+
+Started GET "/static_pages/help" for ::1 at 2020-08-31 15:23:49 +0800
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 10.0ms | Allocations: 83)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 29.2ms | ActiveRecord: 0.0ms | Allocations: 4263)
+
+
+Started GET "/" for ::1 at 2020-08-31 15:23:53 +0800
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 7.3ms | Allocations: 80)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 35ms (Views: 34.2ms | ActiveRecord: 0.0ms | Allocations: 3544)
+
+
+Started GET "/static_pages/help" for ::1 at 2020-08-31 15:32:38 +0800
+  [1m[35m (1.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 7.0ms | Allocations: 80)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 27.9ms | ActiveRecord: 0.0ms | Allocations: 4216)
+
+
+Started GET "/" for ::1 at 2020-08-31 15:32:42 +0800
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 9.0ms | Allocations: 80)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 31ms (Views: 30.3ms | ActiveRecord: 0.0ms | Allocations: 3495)
+
+
+Started GET "/" for ::1 at 2020-08-31 16:21:18 +0800
+  [1m[35m (8.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.9ms | Allocations: 192)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 152ms (Views: 143.8ms | ActiveRecord: 0.0ms | Allocations: 7170)
+
+
+Started GET "/" for ::1 at 2020-08-31 16:28:02 +0800
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 10.0ms | Allocations: 101)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 79ms (Views: 76.5ms | ActiveRecord: 0.0ms | Allocations: 4315)
+
+
+Started GET "/static_pages/help" for ::1 at 2020-08-31 16:28:18 +0800
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 9.9ms | Allocations: 105)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 34ms (Views: 32.7ms | ActiveRecord: 0.0ms | Allocations: 3540)
+
+
+Started GET "/" for ::1 at 2020-08-31 16:54:14 +0800
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 98)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 93ms (Views: 91.8ms | ActiveRecord: 0.0ms | Allocations: 4735)
+
+
+Started GET "/static_pages/help" for ::1 at 2020-08-31 16:54:27 +0800
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.6ms | Allocations: 98)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.0ms | Allocations: 3514)
+
+
+Started GET "/static_pages/help" for ::1 at 2020-08-31 17:16:17 +0800
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 42.3ms | Allocations: 1802)
+Completed 500 Internal Server Error in 65ms (ActiveRecord: 0.0ms | Allocations: 3668)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007ffff5d6a428>::Settings):
+    3: <h1>Help</h1>
+    4: <p>
+    5:     Get help on the Ruby on Rails Tutorial at the
+    6:     <%= link_to "Rails Tutorial help page", Settings.links.rails_tutorial.help_page %>.
+    7:     To get help on this sample app, see the
+    8:     <%= link_to "<em>Ruby on Rails Tutorial</em>book", Settings.links.rails_tutorial.book_page %>.
+    9:     book</a>.
+  
+app/views/static_pages/help.html.erb:6
+Started GET "/static_pages/help" for ::1 at 2020-08-31 17:18:50 +0800
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1802)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms | Allocations: 3668)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007ffff9c57938>::Settings):
+    3: <h1>Help</h1>
+    4: <p>
+    5:     Get help on the Ruby on Rails Tutorial at the
+    6:     <%= link_to "Rails Tutorial help page", Settings.links.rails_tutorial.help_page %>.
+    7:     To get help on this sample app, see the
+    8:     <%= link_to "<em>Ruby on Rails Tutorial</em>book", Settings.links.rails_tutorial.book_page %>.
+    9:     book</a>.
+  
+app/views/static_pages/help.html.erb:6
+Started GET "/static_pages/help" for ::1 at 2020-08-31 17:21:22 +0800
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.7ms | Allocations: 1215)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1787)
+
+
+  
+ActionView::Template::Error (uninitialized constant #<Class:0x00007ffff9c57938>::Settings):
+    3: <h1>Help</h1>
+    4: <p>
+    5:     Get help on the Ruby on Rails Tutorial at the
+    6:     <%= link_to "Rails Tutorial help page", Settings.links.rails_tutorial.help_page %>.
+    7:     To get help on this sample app, see the
+    8:     <%= link_to "<em>Ruby on Rails Tutorial</em>book", Settings.links.rails_tutorial.book_page %>.
+    9:     book</a>.
+  
+app/views/static_pages/help.html.erb:6
+Started GET "/static_pages/help" for ::1 at 2020-08-31 17:24:00 +0800
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 3.9ms | Allocations: 296)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 92ms (Views: 83.6ms | ActiveRecord: 0.0ms | Allocations: 7637)
+
+
+Started GET "/" for ::1 at 2020-08-31 17:25:24 +0800
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 135)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 68ms (Views: 66.4ms | ActiveRecord: 0.0ms | Allocations: 4150)
+
+
+Started GET "/static_pages/help" for ::1 at 2020-08-31 17:25:40 +0800
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.1ms | Allocations: 35)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 27ms (Views: 25.4ms | ActiveRecord: 0.0ms | Allocations: 3652)
+
+
+Started GET "/static_pages/help" for ::1 at 2020-08-31 17:27:35 +0800
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 33.6ms | Allocations: 3212)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 0.0ms | Allocations: 4594)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= provide :title, "Help" %>
+
+<h1>Help</h1>
+<p>
+    Get help on the Ruby on Rails Tutorial at the
+    <%= link_to "Rails Tutorial help page", Settings.links.rails_tutorial.help_page %>.
+    To get help on this sample app, see the
+    <%= link_to <em>"Ruby on Rails Tutorial"</em>" book", Settings.links.rails_tutorial.book_page %>.
+    book</a>.
+</p>
+):
+1:    <%= provide :title, "Help" %>
+2:    
+3:    <h1>Help</h1>
+4:    <p>
+5:        Get help on the Ruby on Rails Tutorial at the
+6:        <%= link_to "Rails Tutorial help page", Settings.links.rails_tutorial.help_page %>.
+7:        To get help on this sample app, see the
+8:        <%= link_to <em>"Ruby on Rails Tutorial"</em>" book", Settings.links.rails_tutorial.book_page %>.
+9:        book</a>.
+10:    </p>
+  
+app/views/static_pages/help.html.erb:9: unknown regexp option - a
+app/views/static_pages/help.html.erb:9: unmatched close parenthesis: /em>" book", Settings.links.rails_tutorial.book_page );@output_buffer.safe_append='.
+app/views/static_pages/help.html.erb:9: syntax error, unexpected '.'
+app/views/static_pages/help.html.erb:12: unterminated string meets end of file
+app/views/static_pages/help.html.erb:12: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/help.html.erb:9: unknown regexp option - a
+app/views/static_pages/help.html.erb:9: unmatched close parenthesis: /em>" book", Settings.links.rails_tutorial.book_page );@output_buffer.safe_append='.
+app/views/static_pages/help.html.erb:9: syntax error, unexpected '.'
+app/views/static_pages/help.html.erb:12: unterminated string meets end of file
+app/views/static_pages/help.html.erb:12: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/help.html.erb:9: unknown regexp option - a
+app/views/static_pages/help.html.erb:9: unmatched close parenthesis: /em>" book", Settings.links.rails_tutorial.book_page );@output_buffer.safe_append='.
+app/views/static_pages/help.html.erb:9: syntax error, unexpected '.'
+app/views/static_pages/help.html.erb:12: unterminated string meets end of file
+app/views/static_pages/help.html.erb:12: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/help.html.erb:9: unknown regexp option - a
+app/views/static_pages/help.html.erb:9: unmatched close parenthesis: /em>" book", Settings.links.rails_tutorial.book_page );@output_buffer.safe_append='.
+app/views/static_pages/help.html.erb:9: syntax error, unexpected '.'
+app/views/static_pages/help.html.erb:12: unterminated string meets end of file
+app/views/static_pages/help.html.erb:12: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/help.html.erb:9: unknown regexp option - a
+app/views/static_pages/help.html.erb:9: unmatched close parenthesis: /em>" book", Settings.links.rails_tutorial.book_page );@output_buffer.safe_append='.
+app/views/static_pages/help.html.erb:9: syntax error, unexpected '.'
+app/views/static_pages/help.html.erb:12: unterminated string meets end of file
+app/views/static_pages/help.html.erb:12: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/help.html.erb:9: unknown regexp option - a
+app/views/static_pages/help.html.erb:9: unmatched close parenthesis: /em>" book", Settings.links.rails_tutorial.book_page );@output_buffer.safe_append='.
+app/views/static_pages/help.html.erb:9: syntax error, unexpected '.'
+app/views/static_pages/help.html.erb:12: unterminated string meets end of file
+app/views/static_pages/help.html.erb:12: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/static_pages/help" for ::1 at 2020-08-31 17:28:35 +0800
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 22.6ms | Allocations: 1040)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms | Allocations: 2458)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= provide :title, "Help" %>
+
+<h1>Help</h1>
+<p>
+    Get help on the Ruby on Rails Tutorial at the
+    <%= link_to "Rails Tutorial help page", Settings.links.rails_tutorial.help_page %>.
+    To get help on this sample app, see the
+    <%= link_to <em>"Ruby on Rails Tutorial"</em>" book", Settings.links.rails_tutorial.book_page %>.  
+</p>
+):
+1:    <%= provide :title, "Help" %>
+2:    
+3:    <h1>Help</h1>
+4:    <p>
+5:        Get help on the Ruby on Rails Tutorial at the
+6:        <%= link_to "Rails Tutorial help page", Settings.links.rails_tutorial.help_page %>.
+7:        To get help on this sample app, see the
+8:        <%= link_to <em>"Ruby on Rails Tutorial"</em>" book", Settings.links.rails_tutorial.book_page %>.  
+9:    </p>
+  
+app/views/static_pages/help.html.erb:9: unknown regexp option - p
+app/views/static_pages/help.html.erb:9: unmatched close parenthesis: /em>" book", Settings.links.rails_tutorial.book_page );@output_buffer.safe_append='.  
+app/views/static_pages/help.html.erb:11: unterminated string meets end of file
+app/views/static_pages/help.html.erb:11: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/help.html.erb:9: unknown regexp option - p
+app/views/static_pages/help.html.erb:9: unmatched close parenthesis: /em>" book", Settings.links.rails_tutorial.book_page );@output_buffer.safe_append='.  
+app/views/static_pages/help.html.erb:11: unterminated string meets end of file
+app/views/static_pages/help.html.erb:11: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/help.html.erb:9: unknown regexp option - p
+app/views/static_pages/help.html.erb:9: unmatched close parenthesis: /em>" book", Settings.links.rails_tutorial.book_page );@output_buffer.safe_append='.  
+app/views/static_pages/help.html.erb:11: unterminated string meets end of file
+app/views/static_pages/help.html.erb:11: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/help.html.erb:9: unknown regexp option - p
+app/views/static_pages/help.html.erb:9: unmatched close parenthesis: /em>" book", Settings.links.rails_tutorial.book_page );@output_buffer.safe_append='.  
+app/views/static_pages/help.html.erb:11: unterminated string meets end of file
+app/views/static_pages/help.html.erb:11: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/help.html.erb:9: unknown regexp option - p
+app/views/static_pages/help.html.erb:9: unmatched close parenthesis: /em>" book", Settings.links.rails_tutorial.book_page );@output_buffer.safe_append='.  
+app/views/static_pages/help.html.erb:11: unterminated string meets end of file
+app/views/static_pages/help.html.erb:11: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/help.html.erb:9: unknown regexp option - p
+app/views/static_pages/help.html.erb:9: unmatched close parenthesis: /em>" book", Settings.links.rails_tutorial.book_page );@output_buffer.safe_append='.  
+app/views/static_pages/help.html.erb:11: unterminated string meets end of file
+app/views/static_pages/help.html.erb:11: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/static_pages/help" for ::1 at 2020-08-31 17:29:49 +0800
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 13.5ms | Allocations: 162)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 40ms (Views: 37.6ms | ActiveRecord: 0.0ms | Allocations: 4652)
+
+
+Started GET "/static_pages/help" for ::1 at 2020-08-31 17:31:39 +0800
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 22.0ms | Allocations: 156)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 43ms (Views: 39.8ms | ActiveRecord: 0.0ms | Allocations: 4536)
+
+
+Started GET "/static_pages/help" for ::1 at 2020-08-31 17:32:39 +0800
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 25.2ms | Allocations: 157)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 86ms (Views: 83.8ms | ActiveRecord: 0.0ms | Allocations: 4795)
+
+
+Started GET "/static_pages/help" for ::1 at 2020-08-31 17:37:38 +0800
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 22.6ms | Allocations: 157)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 57ms (Views: 53.1ms | ActiveRecord: 0.0ms | Allocations: 4639)
+
+
+Started GET "/static_pages/help" for ::1 at 2020-08-31 17:37:57 +0800
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 2.0ms | Allocations: 155)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 76ms (Views: 73.5ms | ActiveRecord: 0.0ms | Allocations: 4996)
+
+
+Started GET "/static_pages/help" for ::1 at 2020-08-31 17:38:16 +0800
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 2.2ms | Allocations: 155)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 33ms (Views: 31.3ms | ActiveRecord: 0.0ms | Allocations: 4623)
+
+
+Started GET "/static_pages/help" for ::1 at 2020-08-31 17:39:23 +0800
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 17.9ms | Allocations: 1038)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms | Allocations: 2404)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= provide :title, "Help" %>
+
+<h1>Help</h1>
+<p>
+    Get help on the Ruby on Rails Tutorial at the
+    <%= link_to "Rails Tutorial help page", Settings.links.rails_tutorial.help_page %>.
+    To get help on this sample app, see the
+    <%= link_to <em>"Ruby on Rails Tutorial book"</em>, Settings.links.rails_tutorial.book_page %>.  
+</p>
+):
+1:    <%= provide :title, "Help" %>
+2:    
+3:    <h1>Help</h1>
+4:    <p>
+5:        Get help on the Ruby on Rails Tutorial at the
+6:        <%= link_to "Rails Tutorial help page", Settings.links.rails_tutorial.help_page %>.
+7:        To get help on this sample app, see the
+8:        <%= link_to <em>"Ruby on Rails Tutorial book"</em>, Settings.links.rails_tutorial.book_page %>.  
+9:    </p>
+  
+app/views/static_pages/help.html.erb:9: unknown regexp option - p
+app/views/static_pages/help.html.erb:9: unmatched close parenthesis: /em>, Settings.links.rails_tutorial.book_page );@output_buffer.safe_append='.  
+app/views/static_pages/help.html.erb:11: unterminated string meets end of file
+app/views/static_pages/help.html.erb:11: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/help.html.erb:9: unknown regexp option - p
+app/views/static_pages/help.html.erb:9: unmatched close parenthesis: /em>, Settings.links.rails_tutorial.book_page );@output_buffer.safe_append='.  
+app/views/static_pages/help.html.erb:11: unterminated string meets end of file
+app/views/static_pages/help.html.erb:11: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/help.html.erb:9: unknown regexp option - p
+app/views/static_pages/help.html.erb:9: unmatched close parenthesis: /em>, Settings.links.rails_tutorial.book_page );@output_buffer.safe_append='.  
+app/views/static_pages/help.html.erb:11: unterminated string meets end of file
+app/views/static_pages/help.html.erb:11: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/help.html.erb:9: unknown regexp option - p
+app/views/static_pages/help.html.erb:9: unmatched close parenthesis: /em>, Settings.links.rails_tutorial.book_page );@output_buffer.safe_append='.  
+app/views/static_pages/help.html.erb:11: unterminated string meets end of file
+app/views/static_pages/help.html.erb:11: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/help.html.erb:9: unknown regexp option - p
+app/views/static_pages/help.html.erb:9: unmatched close parenthesis: /em>, Settings.links.rails_tutorial.book_page );@output_buffer.safe_append='.  
+app/views/static_pages/help.html.erb:11: unterminated string meets end of file
+app/views/static_pages/help.html.erb:11: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/help.html.erb:9: unknown regexp option - p
+app/views/static_pages/help.html.erb:9: unmatched close parenthesis: /em>, Settings.links.rails_tutorial.book_page );@output_buffer.safe_append='.  
+app/views/static_pages/help.html.erb:11: unterminated string meets end of file
+app/views/static_pages/help.html.erb:11: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/static_pages/help" for ::1 at 2020-08-31 17:39:58 +0800
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 2.0ms | Allocations: 162)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 28ms (Views: 26.1ms | ActiveRecord: 0.0ms | Allocations: 4637)
+
+
+Started GET "/" for ::1 at 2020-09-02 14:46:24 +0800
+  [1m[35m (7.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.8ms | Allocations: 267)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 416ms (Views: 400.9ms | ActiveRecord: 0.0ms | Allocations: 14239)
+
+
+Started GET "/static_pages/help" for ::1 at 2020-09-02 14:46:41 +0800
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 0.7ms | Allocations: 162)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 37ms (Views: 34.0ms | ActiveRecord: 0.0ms | Allocations: 3830)
+
+
+Started GET "/static_pages/help" for ::1 at 2020-09-02 15:11:57 +0800
+  [1m[35m (7.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by StaticPagesController#help as HTML
+  Rendering static_pages/help.html.erb within layouts/application
+  Rendered static_pages/help.html.erb within layouts/application (Duration: 3.1ms | Allocations: 295)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 93ms (Views: 80.2ms | ActiveRecord: 0.0ms | Allocations: 6901)
+
+
+Started GET "/static_pages/about" for ::1 at 2020-09-02 15:12:04 +0800
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (Duration: 1.1ms | Allocations: 270)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 16.0ms | ActiveRecord: 0.0ms | Allocations: 3859)
+
+
+Started GET "/static_pages/about" for ::1 at 2020-09-02 15:12:58 +0800
+Processing by StaticPagesController#about as HTML
+  Rendering static_pages/about.html.erb within layouts/application
+  Rendered static_pages/about.html.erb within layouts/application (Duration: 26.7ms | Allocations: 259)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 43ms (Views: 41.0ms | ActiveRecord: 0.0ms | Allocations: 4613)
+
+
