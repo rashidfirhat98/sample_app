@@ -8,3 +8,12 @@ links:
     news_page: https://news.railstutorial.org/
     michaelhartl_page: "https://www.michaelhartl.com/"
     contact_page: "https://www.railstutorial.org/contact"
+
+user:
+  name:
+    max_length: 50
+  email:
+    max_length: 255
+    regex: !ruby/regexp '/\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i'
+  password:
+    min_length: 6
