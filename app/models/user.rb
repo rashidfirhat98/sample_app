@@ -2,21 +2,22 @@ class User < ApplicationRecord
   attr_accessor :remember_token
 
   validates :name, presence: true,
-    length: {maximum: Settings.user.name.max_length}
+    length: {maximum: Settings.validate.name.max_length}
 
   validates :email, presence: true,
-    length: {maximum: Settings.user.email.max_length},
-    format: {with: Settings.user.email.regex},
+    length: {maximum: Settings.validate.email.max_length},
+    format: {with: Settings.validate.email.regex},
     uniqueness: true
 
   validates :password, presence: true,
-    length: {minimum: Settings.user.password.min_length}
+    length: {minimum: Settings.validate.password.min_length},
+    allow_nil: true
 
   has_secure_password
 
   before_save :downcase_email
 
-  class << User
+  class << self
     def new_token
       SecureRandom.urlsafe_base64
     end
@@ -41,7 +42,8 @@ class User < ApplicationRecord
   end
 
   def authenticated? remember_token
-    BCrypt::Password.new(remember_digest).is_password? remember_token
+    return false unless remember_digest
+    BCrypt::Password.new remember_digest.is_password? remember_token
   end
 
   private

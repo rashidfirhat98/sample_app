@@ -9,7 +9,10 @@ links:
     michaelhartl_page: "https://www.michaelhartl.com/"
     contact_page: "https://www.railstutorial.org/contact"
 
-user:
+  other:
+    gravatar_email: "http://gravatar.com/emails"
+   
+validate:
   name:
     max_length: 50
   email:
@@ -19,3 +22,5 @@ user:
     min_length: 6
 
 remember_me: "1"
+
+paging: "10"
