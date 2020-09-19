@@ -7,6 +7,7 @@ gem "bootsnap", ">= 1.4.2", require: false
 gem "bootstrap-sass"
 gem "config"
 gem "faker", "1.7.3"
+gem "figaro"
 gem "jbuilder", "~> 2.7"
 gem "jquery-rails"
 gem "kaminari"
