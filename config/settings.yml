@@ -24,3 +24,5 @@ validate:
 remember_me: "1"
 
 paging: "10"
+
+password_expired_time: 2
