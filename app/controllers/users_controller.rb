@@ -49,6 +49,20 @@ class UsersController < ApplicationController
     flash[:success] = "User deleted"
     redirect_to users_url
   end
+  
+  def following
+    @title = "Following"
+    @user = User.find_by id: params[:id]
+    @users = @user.following.page params[:page]
+    render "show_follow"
+  end
+
+  def followers
+    @title = "Followers"
+    @user = User.find_by id: params[:id]
+    @users = @user.followers.page params[:page]
+    render "show_follow"
+  end
 
   def logged_in_user
     unless logged_in?
@@ -63,7 +77,7 @@ class UsersController < ApplicationController
     return if current_user?(@user)
     
     flash[:danger] = "Unauthorized entry"
-    redirect_to(root_url) 
+    redirect_to root_url
   end
 
   def admin_user
@@ -71,6 +85,7 @@ class UsersController < ApplicationController
   end
 
   private
+  
   def user_params
     params.require(:user).permit :name, :email, :password, :password_confirmation
   end
