@@ -27,4 +27,6 @@ remember_me: "1"
 
 paging: "10"
 
+post: "4"
+
 password_expired_time: 2
